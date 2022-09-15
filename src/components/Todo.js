@@ -1,11 +1,18 @@
 import { useState, useEffect } from 'react';
 import styles from '../css/Todo.module.css';
-import WeatherAPI from '../components/WeatherAPI';
-import GetClock from '../components/Clock';
+import WeatherAPI from './WeatherAPI';
+import GetClock from './Clock';
 
 function Todo() {
   let [toDo, setToDo] = useState("");
   let [toDos, setToDos] = useState([]);
+
+  const logOutClick = () => {
+    localStorage.removeItem("username");
+    localStorage.removeItem("todos");
+    window.location.replace("/react-toDoApp");
+    //로그아웃 > localStorage 데이터 모두 삭제 후 로그인화면으로 이동
+  };
 
   const onChange = (event) => setToDo(event.target.value);
   const toDoObj = {
@@ -41,9 +48,10 @@ function Todo() {
 
   return (
     <div className={styles.container}>
+      <button className={styles.logOutBtn} onClick={logOutClick}>🚪Log-out</button>
       <div>{<WeatherAPI />}</div>
       <div>{<GetClock />}</div>
-      <h2 className={styles.greeting}>Hello, {savedUsername}</h2>
+      <h2 className={styles.greeting}>Hello, {savedUsername} 😄</h2>
       <div className={styles.toDoContainer}>
         <form onSubmit={handleToDoSubmit}>
           <input

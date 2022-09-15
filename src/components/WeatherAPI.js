@@ -31,7 +31,7 @@ function WeatherAPI() {
       .then((data) => {
         console.log(data);
         const getIcon = data.weather[0].icon;
-        setIcon(`/assets/weatherIcon/${getIcon}.png`);
+        setIcon(`https://Jiyaho.github.io/react-toDoApp/assets/weatherIcon/${getIcon}.png`);
         setTemp(`${data.weather[0].main}, ${data.main.temp}℃ / `);
         setCountry(`${data.name} ${data.sys.country}`);
       })

@@ -10,6 +10,8 @@
 
 - 사용자 로그인 (localStorage에 사용자 정보 저장)
 - 인용문구: 사용자 로그인 전 화면 하단 부에 인용문구 랜덤으로 표출
+- 사용자가 로그인하면 To Do 작성 페이지로 이동
+- 사용자 로그아웃 (Log-out 버튼 클릭 시 localStorage의 데이터들 모두 삭제 후 로그인 전 화면으로 이동)
 - To Do List 추가: 사용자 로그인 후 Input Box에 To Do 작성 시, 데이터는 localStorage에 저장되고 페이지에 저장해둔 To Do List 렌더링
 - To Do List 삭제: 추가한 리스트 우측 "❌" 버튼 눌러 삭제
 - 날짜: 일 / 월 / 년도 순으로 화면에 표출
@@ -23,4 +25,3 @@
 
 - 사용자가 작성한 To Do List 수정 기능
 - 완료한 To Do List Check 기능
-- 사용자 로그아웃 기능
