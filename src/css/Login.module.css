@@ -1,0 +1,48 @@
+.loginContainer {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+.wrap {
+  display: block;
+  text-align: center;
+  margin: auto;
+  margin-top: 160px;
+}
+.loginInput {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  width: 350px;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+}
+.loginInput:focus {
+  outline: none;
+  color: white;
+}
+.loginInput::placeholder {
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+}
+.loginBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+}
+.quote {
+  color: white;
+  margin-top: 250px;
+  font-style: italic;
+}
+.author {
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+}

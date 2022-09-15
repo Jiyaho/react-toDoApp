@@ -1,0 +1,57 @@
+.container {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgba(51, 51, 51, 0.4);
+  border-radius: 20px;
+}
+.greeting {
+  font-size: 45px;
+  text-align: center;
+  color: white;
+}
+.toDoContainer {
+  width: 390px;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 18px;
+}
+.toDoInput {
+  width: 340px;
+  border: none;
+  border-bottom: 1px solid white;
+  color: rgb(222, 158, 249);
+  background-color: transparent;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 5px;
+
+}
+.toDoInput::placeholder {
+  color: pink;
+}
+.toDoInput:focus {
+  outline:none;
+}
+.toDoBtn {
+  background-color: transparent;
+  border: none;
+  font-size: 23px;
+}
+.toDoDelBtn {
+  margin: 3px;
+  background-color: transparent;
+  border: none;
+}
+li {
+  list-style-type: square;
+  list-style-position: inside;
+  color: pink;
+  margin: 5px;
+  margin-left: 25px;
+}

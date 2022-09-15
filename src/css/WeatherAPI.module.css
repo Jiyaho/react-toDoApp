@@ -1,0 +1,13 @@
+.container {
+  width: 330px;
+  margin: auto;
+}
+img {
+  margin-bottom: -19px;
+  margin-right: -3px;
+  width: 50px;
+}
+span {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
