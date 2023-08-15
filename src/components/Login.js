@@ -15,23 +15,25 @@ function Login() {
   };
 
   return (
-    <section className={styles.loginContainer}>
-      <div className={styles.wrap}>
-        <form onSubmit={logSubmit}>
-          <input
-            className={styles.loginInput}
-            required
-            maxLength="15"
-            onChange={logChange}
-            value={user}
-            type="text"
-            placeholder="What's your name?"
-          />
-          <button className={styles.loginBtn}>✍🏼</button>
-        </form>
-        {<Quotes />}
-      </div>
-    </section>
+    <>
+      <section className={styles.loginContainer}>
+        <article className={styles.wrap}>
+          <form onSubmit={logSubmit}>
+            <input
+              className={styles.loginInput}
+              required
+              maxLength="15"
+              onChange={logChange}
+              value={user}
+              type="text"
+              placeholder="What's your name?"
+            />
+            <button className={styles.loginBtn}>✍🏼</button>
+          </form>
+          {<Quotes />}
+        </article>
+      </section>
+    </>
   );
 }
 

@@ -28,10 +28,10 @@
 }
 .loginInput::placeholder {
   color: white;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
 }
 .loginInput:focus::-webkit-input-placeholder {
-  color:transparent;
+  color: transparent;
 }
 .loginBtn {
   background-color: transparent;

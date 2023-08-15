@@ -49,7 +49,7 @@ function Quotes() {
   // random()은 소수점을 포함한 무작위한 숫자를 표출한다. 즉, random() * quotes.length는 quotes의 length 만큼 랜덤한 데이터 표출.
 
   return (
-    <div>
+    <div className={styles.quotes_wrap}>
       <p className={styles.quote}>{`"${todaysQuote.quote}"`}</p>
       <span className={styles.author}>{todaysQuote.author}</span>
     </div>

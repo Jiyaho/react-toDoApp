@@ -53,38 +53,40 @@ function Todo() {
   // useEffect를 통해 렌더링될 때, localstorage에 todos가 존재한다면 그 값들을 setToDos에 보여줌.
 
   return (
-    <section className={styles.container}>
-      <button className={styles.logOutBtn} onClick={logOutClick}>
-        🚪Log-out
-      </button>
-      <div>{<WeatherAPI />}</div>
-      <div>{<GetClock />}</div>
-      <h2 className={styles.greeting}>Hello, {savedUsername} 😄</h2>
-      <div className={styles.toDoContainer}>
-        <form onSubmit={handleToDoSubmit}>
-          <input
-            className={styles.toDoInput}
-            onChange={onChange}
-            value={toDo}
-            type="text"
-            placeholder="What are you going to do?"
-          />
-          <button className={styles.toDoBtn}>📝</button>
-        </form>
-        <ul>
-          {savedToDos !== null
-            ? parsedToDos.map((item, index) => (
-                <li id={item.id} key={index}>
-                  <span>{item.text}</span>
-                  <button className={styles.toDoDelBtn} onClick={deleteToDo}>
-                    ❌
-                  </button>
-                </li>
-              ))
-            : null}
-        </ul>
-      </div>
-    </section>
+    <>
+      <section className={styles.container}>
+        <button className={styles.logOutBtn} onClick={logOutClick}>
+          🚪Log-out
+        </button>
+        <div>{<WeatherAPI />}</div>
+        <div>{<GetClock />}</div>
+        <h2 className={styles.greeting}>Hello, {savedUsername} 😄</h2>
+        <div className={styles.toDoContainer}>
+          <form onSubmit={handleToDoSubmit}>
+            <input
+              className={styles.toDoInput}
+              onChange={onChange}
+              value={toDo}
+              type="text"
+              placeholder="What are you going to do?"
+            />
+            <button className={styles.toDoBtn}>📝</button>
+          </form>
+          <ul>
+            {savedToDos !== null
+              ? parsedToDos.map((item, index) => (
+                  <li id={item.id} key={index}>
+                    <span>{item.text}</span>
+                    <button className={styles.toDoDelBtn} onClick={deleteToDo}>
+                      ❌
+                    </button>
+                  </li>
+                ))
+              : null}
+          </ul>
+        </div>
+      </section>
+    </>
   );
 }
 
