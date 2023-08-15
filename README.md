@@ -27,7 +27,12 @@
 - 시간: 현재 시각 표출
 - 사용자 환영 문구: 로그인한 사용자 이름 및 인사 문구 화면 중앙부에 표출
 
-## 5. File Tree Structure
+## 5. Used Skills
+- React.js
+- CSS.module
+- Local Storage
+  
+## 6. File Tree Structure
 
 ```
 📦 react-toDoApp
