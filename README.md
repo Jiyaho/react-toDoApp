@@ -1,7 +1,5 @@
 # To-do-list Application with React
 
----
-
 ## 1. Description
 
 - To-do-list web site using local storage in React.
