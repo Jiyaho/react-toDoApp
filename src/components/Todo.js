@@ -53,7 +53,7 @@ function Todo() {
   // useEffect를 통해 렌더링될 때, localstorage에 todos가 존재한다면 그 값들을 setToDos에 보여줌.
 
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <button className={styles.logOutBtn} onClick={logOutClick}>
         🚪Log-out
       </button>
@@ -84,7 +84,7 @@ function Todo() {
             : null}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }
 

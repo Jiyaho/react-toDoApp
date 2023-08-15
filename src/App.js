@@ -3,14 +3,14 @@ import Todo from './components/Todo';
 import BgImg from './components/BgImg';
 
 function App() {
-  const savedUsername = localStorage.getItem("username");
+  const savedUsername = localStorage.getItem('username');
 
   return (
-    <div>
+    <main>
       {savedUsername === null ? <Login /> : <Todo />}
       {<BgImg />}
-    </div>
+    </main>
   );
-};
+}
 
 export default App;
