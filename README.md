@@ -1,9 +1,5 @@
 # To-do-list Application with React
 
-## 1. 소개
-
-- 크롬 브라우저를 통해서 로그인한 사용자가 To Do List를 작성 및 삭제할 수 있다.
-
 ---
 
 ## 1. Description
