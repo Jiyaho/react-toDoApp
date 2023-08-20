@@ -6,7 +6,8 @@
 
 ## 2. URL
 
-- https://jiyaho.github.io/react-toDoApp/
+- Web Site: https://jiyaho.github.io/react-toDoApp/
+- Github Repository: https://github.com/Jiyaho/react-toDoApp
 
 ## 3. Screenshot
 
@@ -28,10 +29,11 @@
 - 사용자 환영 문구: 로그인한 사용자 이름 및 인사 문구 화면 중앙부에 표출
 
 ## 5. Used Skills
+
 - React.js
 - CSS.module
 - Local Storage
-  
+
 ## 6. File Tree Structure
 
 ```
